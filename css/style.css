@@ -1,0 +1,91 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url(menu.css);
+@import url(banner.css);
+@import url(blog.css);
+@import url(info.css);
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+:root{
+  scroll-behavior: smooth;
+  --white-text: #fff;
+}
+
+header{
+  width: 100%;
+  height: 50px;
+  background: #333;
+  color: var(--white-text);
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 100;
+  
+}
+
+.contenedor{
+  width: 98%;
+  margin:auto;
+}
+
+header .contenedor{
+  display:table ;
+}
+
+header h1{
+  float: left;
+  position: absolute;
+  top: -15px;
+}
+
+
+
+section{
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+#bienvenidos{
+  text-align: center;
+}
+
+footer .contenedor{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 25px;
+}
+
+.copy{
+  font-size: 20px;
+}
+
+.sociales{
+  width: 100%;
+  text-align: center;
+  font-size: 28px;
+  padding-top: 10px;
+}
+
+.sociales a{
+  color: #333;
+  text-decoration: none;
+  
+}
+
+section p{
+  padding-top: 10px;
+}
+
+
+@media (min-width:1024px){
+  .contenedor{
+    width: 1000px;
+  }
+}
